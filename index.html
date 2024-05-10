@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        header{
+            background-color: #8d0c1d;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            box-sizing: border-box;
+            align-items: center;
+        }
+        #logo{
+            width: 100px;
+            height: 100px;
+        }
+        #logo> img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+        #nav{
+            display: flex;
+            justify-content: flex-end;
+        }
+        #nav> li{
+            padding: 10px; 
+            margin: 10px;
+            list-style-type: none;
+            /* border: 1px solid red; */
+            font-size: 24px;
+            font-weight: bolder;
+            color: #fef9e2;        
+        }
+        #nav> li:hover{
+            color: #fa8400;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        #slider{
+            width: 100%;
+            height: 600px;
+        }
+        #slider-text{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 400px;
+            font-weight: bolder;
+            position: absolute;
+            top: 300px;
+            right: 200px;
+            /* border: 1px solid red; */
+        }
+        #slider-text> h1{
+            font-size: 60px;
+        }
+        span{
+            color: #8d0c1d;
+        }
+        #slider> img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        #about-text, #projects-text{
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 46px;
+            background-color: #8d0c1d;
+            color: #fef9e2;
+            text-transform: uppercase;
+        }
+        #about{
+            display: flex;
+            /* border: 1px solid red; */
+            justify-content: space-around;
+            height: 300px;
+            align-items: center;
+        }
+        #about> #left{
+            width: 400px;
+            text-align: justify;
+            font-size: 20px;
+        }
+        #about> #right{
+            width: 400px;
+        }
+        #right> img{
+            width: 100%;
+            height: 100%;
+        }
+        #projects{
+            width: 100%;
+            /* height: 600px; */
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-around;
+        }
+        .project{
+            width: 300px;
+            background-color: #8d0c1d;
+            padding: 5px;
+            -webkit-box-shadow: 10px 10px 35px 4px rgba(250,132,0,0.82);
+            -moz-box-shadow: 10px 10px 35px 4px rgba(250,132,0,0.82);
+            box-shadow: 10px 10px 35px 4px rgba(250,132,0,0.82);
+        }
+        /* webkit etc box shadow humne box shadow css generator se customize kr k lagaya h*/
+        .project> img{
+            width: 100%;
+        }
+        .project> p{
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .project> h2{
+            text-transform: uppercase;
+            color: #fa8400;
+        }
+        #footer{
+            width: 100%;
+            height: 400px;
+            background-color: #8d0c1d;
+            margin: 20px 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .foot{
+            width: 400px;
+            height: 300px;
+            background-color: #fa8400;
+            font-size: 20px;
+        }
+        #icons{
+            display: flex;
+            justify-content: space-around;
+        }
+        #icons> i{
+           font-size: 34px;
+        }
+        #icons> i:hover{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div id="logo">
+            <img src="img/logo2.webp" alt="">
+        </div>
+            <nav>
+                <ul id="nav">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Project</li>
+                <li class="item">Course</li>
+                <li class="item">Contact us</li>
+                </ul>
+            </nav>
+        
+    </header>
+    <div id="slider">
+        <img src="img/slider.jpg" alt="">
+
+
+    </div>
+
+ <div id="slider-text">
+    <h1>Fauget 
+        <span>Bakery</span> </h1>
+        
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, nemo odio veniam eius, quasi tenetur blanditiis quae rem, distinctio quibusdam commodi. Sed id, deserunt modi vero blanditiis dignissimos animi temporibus!</p>
+ </div>
+
+ <h1 id="about-text">About</h1>
+    <div id="about">       
+
+        <div id="left">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, 
+            consectetur nulla rem necessitatibus ipsum molestias dolore nemo reiciendis
+            amet quas sed delectus ullam aliquid facere quibusdam suscipit sit asperiores a.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, 
+            consectetur nulla rem necessitatibus ipsum molestias dolore nemo reiciendis
+            amet quas sed delectus ullam aliquid facere quibusdam consectetur nulla rem necessitatibus ipsum molestias dolore nemo reiciendis
+            amet quas sed delectus ullam aliquid facere quibusdam suscipit sit asperiores a.</p>
+        </div>
+
+        <div id="right">
+            <img src="img/about.jpg" alt="">
+        </div>
+    </div>
+
+    <h1 id="projects-text">Projects</h1>
+
+<div id="projects">
+    <div class="project">
+        <img src="img/project.jpg" alt="">
+
+        <h2>Item 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, 
+        fuga nemo laboriosam libero tempore autem. Praesentium neque quod, 
+        alias quibusdam, tempora deleniti ipsum cumque tenetur vero vel 
+        labore minus velit!</p>
+    </div>
+
+    <div class="project">
+        <img src="img/project.jpg" alt="">
+
+        <h2>Item 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, 
+        fuga nemo laboriosam libero tempore autem. Praesentium neque quod, 
+        alias quibusdam, tempora deleniti ipsum cumque tenetur vero vel 
+        labore minus velit!</p>
+    </div>
+
+    <div class="project">
+        <img src="img/project.jpg" alt="">
+
+        <h2>Item 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, 
+        fuga nemo laboriosam libero tempore autem. Praesentium neque quod, 
+        alias quibusdam, tempora deleniti ipsum cumque tenetur vero vel 
+        labore minus velit!</p>
+    </div>
+
+    <div class="project">
+        <img src="img/project.jpg" alt="">
+
+        <h2>Item 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, 
+        fuga nemo laboriosam libero tempore autem. Praesentium neque quod, 
+        alias quibusdam, tempora deleniti ipsum cumque tenetur vero vel 
+        labore minus velit!</p>
+    </div>
+    
+</div>
+
+
+<div id="footer">
+
+    <div class="foot">
+        <h1>About</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque officia minima neque! Autem impedit quo doloremque ratione porro expedita nobis incidunt accusantium nesciunt exercitationem, fugiat, deserunt unde voluptas earum officiis.
+        </p>
+    </div>
+    <div class="foot">
+            <ul>
+            <li class="item">Home</li>
+            <li class="item">About</li>
+            <li class="item">Project</li>
+            <li class="item">Course</li>
+            <li class="item">Contact us</li>
+            </ul>
+    </div>
+    <div class="foot">
+        <h2>Social Icon</h2>
+
+        <div id="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

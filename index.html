@@ -6,6 +6,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        body{
+            margin: 0px ;
+            padding: 0px;
+        }
         header{
             background-color: #8d0c1d;
             display: flex;
@@ -13,6 +17,11 @@
             padding: 10px;
             box-sizing: border-box;
             align-items: center;
+            position: sticky;
+            /* width: 100%; */
+            top: 10px;
+            /* kisi bhi item ko forward or backward krne k liye hm use krte hain z index. */
+            z-index: 1;
         }
         #logo{
             width: 100px;
@@ -50,7 +59,7 @@
             width: 400px;
             font-weight: bolder;
             position: absolute;
-            top: 300px;
+            top: 200px;  /* sir ne 300px kiya ha lekin mere header k pos:fixed k issue ki wajah se meine 200px krdiyalekin jb sticky use karoongi toh wapis 300px krdoongi woh mjh pe depend krta hai.*/
             right: 200px;
             /* border: 1px solid red; */
         }
@@ -123,7 +132,7 @@
             width: 100%;
             height: 400px;
             background-color: #8d0c1d;
-            margin: 20px 0px;
+            margin-top: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -132,7 +141,6 @@
             width: 400px;
             height: 300px;
             background-color: #fa8400;
-            font-size: 20px;
         }
         #icons{
             display: flex;
@@ -140,9 +148,31 @@
         }
         #icons> i{
            font-size: 34px;
+           color: #fef9e2;
         }
         #icons> i:hover{
-            color: white;
+            color: #8d0c1d;
+            cursor: pointer;
+        }
+        #whatsapp{
+        }
+        #whatsapp> a> img{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            bottom: 40px;
+            right: 20px;
+        }
+        #copyrights{
+            background-color: #8d0c1d; 
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            color: #fef9e2;
+            font-size: 24px;
+            margin: 0px auto ;
+        }
+        #copyrights> h4{
+            margin: 0px;
         }
     </style>
 </head>
@@ -267,6 +297,14 @@
             <i class="fa-brands fa-youtube"></i>
         </div>
     </div>
+</div>
+
+<div id="whatsapp">
+    <a href="https://api.whatsapp.com/send?phone=03211234567"> <img src="img/whatsapp.jpg" alt=""></a>
+</div>
+
+<div id="copyrights">
+    <h4>Copyrights © 2018 by ELITE USA TRADING All Rights Reserved.</h4>
 </div>
 
 
